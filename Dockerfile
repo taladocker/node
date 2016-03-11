@@ -19,6 +19,7 @@ RUN set -ex \
     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
   done
 
+RUN apt-get install xz-utils
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 5.8.0
 
